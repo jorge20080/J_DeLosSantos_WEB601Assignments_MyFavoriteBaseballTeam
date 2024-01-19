@@ -15,12 +15,16 @@ export class ContentList{
         return this.contents.length;
     }
     getContentByIndex(index: number){
-        const {title, description, creator, imgURL} = this.contents[index];
-        return `<div class="card_container">
-            <img src=${imgURL} alt="${title} image"/>
-            <h2>${title}</h2>
-            <p>${description}</p>
-            <p><b>Founder:</b> ${creator}</p>
-        </div>`;
+        if(index <= this.getContentLength()){
+            const {title, description, creator, imgURL} = this.contents[index]; 
+            return `<div class="card_container">
+                <img src=${imgURL} alt="${title} image"/>
+                <h2>${title}</h2>
+                <p>${description}</p>
+                <p><b>Founder:</b> ${creator}</p>
+            </div>`;
+        } else{
+            return `<div class="card_container"><p class="error">Content not found for index: ${index}</p></div>`;
+        }
     }
 }
