@@ -1,7 +1,7 @@
 <!-- <div [innerHTML] = content.title></div> -->
 <div class="card" [class.is-first]="isFirst" >
     <h2>{{content.title}}</h2>
-    <img *ngIf="content.imgURL" src={{content.imgURL}} alt="{{content.title}}" /><br/>
+    <img (click)="onClick(content.id, content.title)" *ngIf="content.imgURL" src={{content.imgURL}} alt="{{content.title}}" /><br/>
     <p><b>Description:</b> {{content.description}}</p>
     <p><b>Creator:</b> {{content.creator}}</p>
     <p *ngIf="content.type"><b>Type:</b> {{content.type}}</p>

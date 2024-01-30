@@ -14,4 +14,7 @@ export class ContentCardComponent {
   constructor(){
 
   }
+  onClick(id:number,title:string){
+    console.log(id,title);
+  }
 }
