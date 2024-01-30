@@ -29,7 +29,6 @@ export class ContentListComponent {
         title:"New York Mets",
         description: "The New York Mets are an American professional baseball team based in the New York City borough of Queens. The Mets compete in Major League Baseball (MLB) as a member of the National League (NL) East division. They are one of two major league clubs based in New York City, the other being the American League's (AL) New York Yankees.",
         creator: "Steve Cohen",
-        imgURL: "/assets/img/mets.png"
       },
       {
         id:3,
