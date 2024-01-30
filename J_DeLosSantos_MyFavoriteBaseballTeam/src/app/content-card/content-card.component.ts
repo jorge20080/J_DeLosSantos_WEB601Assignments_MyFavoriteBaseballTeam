@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Content } from '../helper-files/content-interface';
 @Component({
   selector: 'app-content-card',
   standalone: true,
@@ -7,7 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './content-card.component.scss'
 })
 export class ContentCardComponent {
-  contentList = "testing123"
+  @Input() content: Content = {id:0, title: "abc", description:"abc", creator:"abc"};
   constructor(){
 
   }
