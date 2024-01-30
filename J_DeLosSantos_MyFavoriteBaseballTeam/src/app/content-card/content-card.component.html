@@ -3,5 +3,14 @@
     <h2>{{content.title}}</h2>
     <img src={{content.imgURL}} alt="{{content.title}}" /><br/>
     <p><b>Description:</b> {{content.description}}</p>
-    <span><b>Creator:</b> {{content.creator}}</span><br/><br/>
+    <p><b>Creator:</b> {{content.creator}}</p>
+    <p *ngIf="content.type"><b>Type:</b> {{content.type}}</p>
+    <div *ngIf="content.tags">
+        <p><b>Tags:</b></p>
+        <ul>
+            <li *ngFor="let tag of content.tags">
+                {{tag}}
+            </li>
+        </ul>
+    </div>
 </div>

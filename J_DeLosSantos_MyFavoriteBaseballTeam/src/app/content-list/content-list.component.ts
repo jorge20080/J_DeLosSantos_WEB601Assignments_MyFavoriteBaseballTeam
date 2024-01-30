@@ -20,7 +20,9 @@ export class ContentListComponent {
         title:"Boston Red Sox",
         description: "The Boston Red Sox are an American professional baseball team based in Boston. The Red Sox compete in Major League Baseball (MLB) as a member club of the American League (AL) East division. Founded in 1901 as one of the American League's eight charter franchises, the team's home ballpark has been Fenway Park since 1912.",
         creator: "John I. Taylor",
-        imgURL: "/assets/img/redsox.jpeg"
+        imgURL: "/assets/img/redsox.jpeg",
+        type: "Test Type",
+        tags: ["AL", "MLB", "AL EAST"]
       },
       {
         id:2,

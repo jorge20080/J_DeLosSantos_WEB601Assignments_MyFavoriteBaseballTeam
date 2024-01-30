@@ -1,9 +1,10 @@
+import { NgFor, NgIf } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { Content } from '../helper-files/content-interface';
 @Component({
   selector: 'app-content-card',
   standalone: true,
-  imports: [],
+  imports: [NgIf, NgFor],
   templateUrl: './content-card.component.html',
   styleUrl: './content-card.component.scss'
 })
