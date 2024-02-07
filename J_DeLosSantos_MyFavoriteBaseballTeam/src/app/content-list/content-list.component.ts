@@ -1,18 +1,19 @@
 import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 import { ContentCardComponent } from '../content-card/content-card.component';
+import { FilterTypePipe } from '../filter-type.pipe';
 import { Content } from '../helper-files/content-interface';
 
 @Component({
   selector: 'app-content-list',
   standalone: true,
-  imports: [ContentCardComponent, NgFor],
+  imports: [ContentCardComponent, NgFor, FilterTypePipe],
   templateUrl: './content-list.component.html',
   styleUrl: './content-list.component.scss'
 })
+
 export class ContentListComponent {
   contentItems: Content[];
-  test : string[];
   constructor(){
     this.contentItems = [
       {
@@ -70,7 +71,6 @@ export class ContentListComponent {
         imgURL: "https://upload.wikimedia.org/wikipedia/en/b/ba/Toronto_Blue_Jays_logo.svg"
       }
     ]
-    this.test = ["test", "test2"];
   }
   
 }
