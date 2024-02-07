@@ -1,7 +1,7 @@
 <!-- <app-content-card *ngFor="let item of contentItems ; index as i; first as isFirst" [content]="item" [isFirst]="isFirst"></app-content-card> -->
 
 <div class="search_container">
-    <input type="search" placeholder="Filter By Title" #search (input)="updateValue(search.value)"/>
+    <input type="search" placeholder="Check If Title Exists" #search (input)="updateValue(search.value)"/>
     <button (click)="handleOnClick()">Check</button>
 </div>
 <p *ngIf="showResult && checkIfTitleExists()" class="result exists">This Title Exists</p>
