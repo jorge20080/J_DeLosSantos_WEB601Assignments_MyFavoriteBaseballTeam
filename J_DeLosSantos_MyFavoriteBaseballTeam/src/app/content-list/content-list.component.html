@@ -1,8 +1,8 @@
 <!-- <app-content-card *ngFor="let item of contentItems ; index as i; first as isFirst" [content]="item" [isFirst]="isFirst"></app-content-card> -->
 
 <h2>Content with Test1 Type</h2>
-<app-content-card *ngFor="let item of (contentItems | filterType:'Test1') ; index as i; first as isFirst" [content]="item" [isFirst]="isFirst"></app-content-card>
+<app-content-card *ngFor="let item of (contentItems | filterType:'Test1') ; index as i; first as isFirst" [content]="item" [isFirst]="isFirst" type="test1"></app-content-card>
 <h2>Content with Test2 Type</h2>
-<app-content-card *ngFor="let item of (contentItems | filterType:'Test2') ; index as i; first as isFirst" [content]="item" [isFirst]="isFirst"></app-content-card>
+<app-content-card *ngFor="let item of (contentItems | filterType:'Test2') ; index as i; first as isFirst" [content]="item" [isFirst]="isFirst" type="test2"></app-content-card>
 <h2>Content with No Types</h2>
-<app-content-card *ngFor="let item of (contentItems | filterType) ; index as i; first as isFirst" [content]="item" [isFirst]="isFirst"></app-content-card>
+<app-content-card *ngFor="let item of (contentItems | filterType) ; index as i; first as isFirst" [content]="item" [isFirst]="isFirst" type="none"></app-content-card>

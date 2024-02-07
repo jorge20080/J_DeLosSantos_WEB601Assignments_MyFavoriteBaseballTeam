@@ -11,6 +11,7 @@ import { Content } from '../helper-files/content-interface';
 export class ContentCardComponent {
   @Input() content: Content = {id:0, title: "abc", description:"abc", creator:"abc"};
   @Input() isFirst:boolean = false;
+  @Input() type:string ="";
   constructor(){
 
   }
