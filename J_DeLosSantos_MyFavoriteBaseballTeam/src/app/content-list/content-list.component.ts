@@ -21,7 +21,7 @@ export class ContentListComponent {
         description: "The Boston Red Sox are an American professional baseball team based in Boston. The Red Sox compete in Major League Baseball (MLB) as a member club of the American League (AL) East division. Founded in 1901 as one of the American League's eight charter franchises, the team's home ballpark has been Fenway Park since 1912.",
         creator: "John I. Taylor",
         imgURL: "/assets/img/redsox.jpeg",
-        type: "Test Type 1",
+        type: "Test1",
         tags: ["AL", "MLB", "AL EAST"]
       },
       {
@@ -36,7 +36,7 @@ export class ContentListComponent {
         title:"San Diego Padres",
         description: "The San Diego Padres are an American professional baseball team based in San Diego. The Padres compete in Major League Baseball (MLB) as a member club of the National League (NL) West division. Founded in 1969, the club has won two NL pennants—in 1984 and 1998, losing in the World Series both years.",
         creator: "C. Arnholt Smith",
-        type: "Test Type 2",
+        type: "Test2",
         imgURL: "/assets/img/padres.png"
       }, 
       {
@@ -44,6 +44,7 @@ export class ContentListComponent {
         title:"Philadelphia Phillies",
         description: "The Philadelphia Phillies are an American professional baseball team based in Philadelphia. The Phillies compete in Major League Baseball (MLB) as a member of the National League (NL) East division. Since 2004, the team's home stadium has been Citizens Bank Park, located in the South Philadelphia Sports Complex.",
         creator: "Al Reach",
+        type: "Test1",
         imgURL: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Philadelphia_Phillies_Insignia.svg/1920px-Philadelphia_Phillies_Insignia.svg.png"
       },
       {
@@ -65,6 +66,7 @@ export class ContentListComponent {
         title:"Toronto Blue Jays",
         description: "The Toronto Blue Jays are a Canadian professional baseball team based in Toronto. The Blue Jays compete in Major League Baseball (MLB) as a member club of the American League (AL) East division. Since 1989, the team has played its home games primarily at Rogers Centre in downtown Toronto.",
         creator: "Edward Samuel",
+        type: "Test2",
         imgURL: "https://upload.wikimedia.org/wikipedia/en/b/ba/Toronto_Blue_Jays_logo.svg"
       }
     ]
