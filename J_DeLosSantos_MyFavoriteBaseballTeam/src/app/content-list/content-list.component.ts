@@ -21,7 +21,7 @@ export class ContentListComponent {
         description: "The Boston Red Sox are an American professional baseball team based in Boston. The Red Sox compete in Major League Baseball (MLB) as a member club of the American League (AL) East division. Founded in 1901 as one of the American League's eight charter franchises, the team's home ballpark has been Fenway Park since 1912.",
         creator: "John I. Taylor",
         imgURL: "/assets/img/redsox.jpeg",
-        type: "Test Type",
+        type: "Test Type 1",
         tags: ["AL", "MLB", "AL EAST"]
       },
       {
@@ -36,6 +36,7 @@ export class ContentListComponent {
         title:"San Diego Padres",
         description: "The San Diego Padres are an American professional baseball team based in San Diego. The Padres compete in Major League Baseball (MLB) as a member club of the National League (NL) West division. Founded in 1969, the club has won two NL pennants—in 1984 and 1998, losing in the World Series both years.",
         creator: "C. Arnholt Smith",
+        type: "Test Type 2",
         imgURL: "/assets/img/padres.png"
       }, 
       {
@@ -58,6 +59,13 @@ export class ContentListComponent {
         description: "The Tampa Bay Rays are an American professional baseball team based in the Tampa Bay area. The Rays compete in Major League Baseball (MLB) as a member club of the American League (AL) East division. Since its inception, the team's home ballpark has been Tropicana Field in St. Petersburg, Florida.",
         creator: "Vince Naimoli",
         imgURL: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Tampa_Bay_Rays_cap_logo.svg/1920px-Tampa_Bay_Rays_cap_logo.svg.png"
+      },
+      {
+        id:7,
+        title:"Toronto Blue Jays",
+        description: "The Toronto Blue Jays are a Canadian professional baseball team based in Toronto. The Blue Jays compete in Major League Baseball (MLB) as a member club of the American League (AL) East division. Since 1989, the team has played its home games primarily at Rogers Centre in downtown Toronto.",
+        creator: "Edward Samuel",
+        imgURL: "https://upload.wikimedia.org/wikipedia/en/b/ba/Toronto_Blue_Jays_logo.svg"
       }
     ]
     this.test = ["test", "test2"];
