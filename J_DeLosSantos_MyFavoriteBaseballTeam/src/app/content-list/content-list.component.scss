@@ -4,3 +4,9 @@ h2{
     color: white;
     border-radius: 50px;
 }
+.result{
+    color: red;
+}
+.result.exists{
+    color: green;
+}
