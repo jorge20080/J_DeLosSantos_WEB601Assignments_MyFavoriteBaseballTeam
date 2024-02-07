@@ -1,7 +1,5 @@
 h2{
     padding: 5px;
-    background-color: green;
-    color: white;
     border-radius: 50px;
 }
 .result{
@@ -9,4 +7,20 @@ h2{
 }
 .result.exists{
     color: green;
+}
+input{
+    height: 40px;
+    width: calc(100% - 100px);
+    padding: 0 10px;
+}
+button{
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    border:none;
+    color: white;
+}
+.search_container{
+    position:sticky;
+    top:0;
 }
