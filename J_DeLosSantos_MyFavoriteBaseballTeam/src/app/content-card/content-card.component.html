@@ -5,7 +5,7 @@
     <img (click)="onClick(content.id, content.title)" *ngIf="!content.imgURL" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Baseball.svg/2048px-Baseball.svg.png" alt="{{content.title}}" /><br/>
     <p><b>Description:</b> {{content.description}}</p>
     <p><b>Creator:</b> {{content.creator}}</p>
-    <p *ngIf="content.type"><b>Type:</b> {{content.type}}</p>
+    <p *ngIf="content.type" appHoverAffect><b>Type:</b> {{content.type}}</p>
     <div *ngIf="content.tags">
         <p><b>Tags:</b></p>
         <ul>
