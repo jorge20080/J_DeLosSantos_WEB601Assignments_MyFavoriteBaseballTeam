@@ -1,6 +1,6 @@
 {
   "name": "j-de-los-santos-my-favorite-baseball-team",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
