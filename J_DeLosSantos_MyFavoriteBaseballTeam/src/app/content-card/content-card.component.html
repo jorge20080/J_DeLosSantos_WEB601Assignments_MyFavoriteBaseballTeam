@@ -1,5 +1,5 @@
 <!-- <div [innerHTML] = content.title></div> -->
-<div class="card" [class.is-first]="isFirst" [class]="type" >
+<div class="card" [class.is-first]="isFirst" [class]="type" appHoverAffect affectStyle="border" >
     <h2>{{content.title}}</h2>
     <img (click)="onClick(content.id, content.title)" *ngIf="content.imgURL" src={{content.imgURL}} alt="{{content.title}}" /><br/>
     <img (click)="onClick(content.id, content.title)" *ngIf="!content.imgURL" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Baseball.svg/2048px-Baseball.svg.png" alt="{{content.title}}" /><br/>
