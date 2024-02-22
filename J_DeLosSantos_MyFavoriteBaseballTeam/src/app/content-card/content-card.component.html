@@ -9,7 +9,7 @@
     <div *ngIf="content.tags">
         <p><b>Tags:</b></p>
         <ul>
-            <li *ngFor="let tag of content.tags">
+            <li  *ngFor="let tag of content.tags" appHoverAffect affectStyle="bold">
                 {{tag}}
             </li>
         </ul>

@@ -1,19 +1,22 @@
-import { Directive, HostBinding, HostListener } from '@angular/core';
+import { Directive, HostBinding, HostListener, Input } from '@angular/core';
 
 @Directive({
   selector: '[appHoverAffect]',
   standalone: true
 })
 export class HoverAffectDirective {
+  @Input() affectStyle: 'underline' | 'bold' ='underline';
   @HostBinding('style.textDecoration') textDecoration: string = "";
-
+  @HostBinding('style.fontWeight') fontWeight: string = "";
   constructor() { }
 
   @HostListener('mouseenter') onMouseEnter() {
-    this.textDecoration = 'underline';
+    if (this.affectStyle === 'underline') this.textDecoration = 'underline'; 
+    else this.fontWeight = 'bold';
   }
 
   @HostListener('mouseleave') onMouseLeave() {
-    this.textDecoration = 'none';
+    if (this.affectStyle === 'underline') this.textDecoration = 'none';
+    else this.fontWeight = 'normal';
   }
 }
