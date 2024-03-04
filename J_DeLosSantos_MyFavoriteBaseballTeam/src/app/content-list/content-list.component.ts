@@ -17,6 +17,7 @@ export class ContentListComponent {
   contentItems: Content[];
   searchValue: string =""; 
   showResult: boolean = false;
+  showError: boolean = false;
   constructor(){
     this.contentItems = [
       {
@@ -91,7 +92,11 @@ export class ContentListComponent {
         this.contentItems = [...this.contentItems, content] 
         console.log('Content added successfully:', content.title);
         resolve("");
+        // reject();
       }, 1000);
+    })
+    sendContent.catch(()=>{
+      this.showError = true;
     })
   }
 }

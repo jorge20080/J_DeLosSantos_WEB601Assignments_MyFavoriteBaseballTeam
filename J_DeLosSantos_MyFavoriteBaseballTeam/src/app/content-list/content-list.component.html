@@ -1,5 +1,6 @@
 <!-- <app-content-card *ngFor="let item of contentItems ; index as i; first as isFirst" [content]="item" [isFirst]="isFirst"></app-content-card> -->
 <app-create-content (createContent)="addContent($event)"></app-create-content>
+<p *ngIf="showError" class="error">Content Failed to be added</p>
 <div class="search_container">
     <input type="search" placeholder="Check If Title Exists" #search (input)="updateValue(search.value)"/>
     <button (click)="handleOnClick()">Check</button>
