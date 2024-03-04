@@ -85,4 +85,13 @@ export class ContentListComponent {
   handleOnClick(){
     this.showResult = true;
   }
+  addContent(content: Content){
+    const sendContent = new Promise((resolve,reject)=>{
+      setTimeout(() => {
+        this.contentItems = [...this.contentItems, content] 
+        console.log('Content added successfully:', content.title);
+        resolve("");
+      }, 1000);
+    })
+  }
 }

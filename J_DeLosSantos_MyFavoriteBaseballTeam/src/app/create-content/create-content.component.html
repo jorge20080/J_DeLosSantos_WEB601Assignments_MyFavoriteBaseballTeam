@@ -1,1 +1,47 @@
-<p>create-content works!</p>
+<form>
+    <label for="id">
+        ID:
+        <br>
+        <input type="number" name="id" #id/>
+    </label>
+    <br>
+    <label for="">
+        Title:
+        <br>
+        <input type="text" name="title" #title/>
+    </label>
+    <br>
+    <label for="">
+        Description:
+        <br>
+        <input type="text" name="description" #description/>
+    </label>
+    <br>
+    <label for="">
+        Creator:
+        <br>
+        <input type="text" name="creator" #creator/>
+    </label>
+    <br>
+    <label for="">
+        imgURL:
+        <br>
+        <input type="text" name="imgURL" #imgURL/>
+    </label>
+    <br>
+    <label for="">
+        Type:
+        <br>
+        <input type="text" name="type" #type/>
+    </label>
+    <br>
+    <label for="">
+        Tags:
+        <br>
+        <input type="text" name="tags" #tags/>
+    </label>
+    <br>
+    <input type="submit" value="Create" (click)="onSubmit($event, {id: id.valueAsNumber, title:title.value, description:description.value, creator:creator.value, imgURL:imgURL.value, type:type.value, tags:[tags.value]})"/>
+    <br>
+    <br>
+</form>
