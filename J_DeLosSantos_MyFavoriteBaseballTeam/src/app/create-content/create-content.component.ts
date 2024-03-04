@@ -9,12 +9,22 @@ import { Content } from '../helper-files/content-interface';
   styleUrl: './create-content.component.scss'
 })
 export class CreateContentComponent {
-  @Output() createContent = new EventEmitter<Content>();
-  content: Content = {} as Content;
+  @Output() createContent = new EventEmitter<Promise<Content>>();
   
-  onSubmit(e:Event, content: Content ) {
+  onSubmit(e:SubmitEvent, content: Content ) {
+
+    const sendContent = new Promise<any>((resolve,reject)=>{
+      setTimeout(() => {
+        if(content.title === ""){
+          reject();
+        }
+        else {
+          console.log('Content added successfully:', content.title);
+          resolve(content);
+        }
+      }, 1000);
+    })
     e.preventDefault();
-    this.content = content;
-    this.createContent.emit(this.content);
+    this.createContent.emit(sendContent);
   }
 }
