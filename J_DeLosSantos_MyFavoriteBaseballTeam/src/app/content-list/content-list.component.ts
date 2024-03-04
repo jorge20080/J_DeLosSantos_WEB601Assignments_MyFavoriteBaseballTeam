@@ -89,12 +89,19 @@ export class ContentListComponent {
   addContent(content: Content){
     const sendContent = new Promise((resolve,reject)=>{
       setTimeout(() => {
-        this.contentItems = [...this.contentItems, content] 
-        console.log('Content added successfully:', content.title);
-        resolve("");
-        // reject();
+        if(content.title === ""){
+          reject();
+        }
+        else {
+          this.contentItems = [...this.contentItems, content] 
+          console.log('Content added successfully:', content.title);
+          resolve("");
+        }
       }, 1000);
     })
+    sendContent.then(()=>{
+      this.showError = false;
+    });
     sendContent.catch(()=>{
       this.showError = true;
     })
