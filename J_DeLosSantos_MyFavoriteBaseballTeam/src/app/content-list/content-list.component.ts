@@ -1,13 +1,14 @@
 import { NgFor, NgIf } from '@angular/common';
 import { Component } from '@angular/core';
 import { ContentCardComponent } from '../content-card/content-card.component';
+import { CreateContentComponent } from '../create-content/create-content.component';
 import { FilterTypePipe } from '../filter-type.pipe';
 import { Content } from '../helper-files/content-interface';
 
 @Component({
   selector: 'app-content-list',
   standalone: true,
-  imports: [ContentCardComponent, NgFor, NgIf, FilterTypePipe],
+  imports: [ContentCardComponent, NgFor, NgIf, FilterTypePipe, CreateContentComponent],
   templateUrl: './content-list.component.html',
   styleUrl: './content-list.component.scss'
 })

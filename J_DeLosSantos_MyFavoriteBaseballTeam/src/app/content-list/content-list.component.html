@@ -1,5 +1,5 @@
 <!-- <app-content-card *ngFor="let item of contentItems ; index as i; first as isFirst" [content]="item" [isFirst]="isFirst"></app-content-card> -->
-
+<app-create-content></app-create-content>
 <div class="search_container">
     <input type="search" placeholder="Check If Title Exists" #search (input)="updateValue(search.value)"/>
     <button (click)="handleOnClick()">Check</button>
