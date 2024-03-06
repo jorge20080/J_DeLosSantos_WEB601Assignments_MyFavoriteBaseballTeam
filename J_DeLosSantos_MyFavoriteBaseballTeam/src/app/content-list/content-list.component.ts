@@ -18,6 +18,7 @@ export class ContentListComponent {
   searchValue: string =""; 
   showResult: boolean = false;
   showError: boolean = false;
+  showSuccess: boolean = false;
   constructor(){
     this.contentItems = [
       {
@@ -90,9 +91,11 @@ export class ContentListComponent {
     content.then((newContent)=>{
       this.contentItems = [...this.contentItems, newContent]
       this.showError = false;
+      this.showSuccess = true;
     });
     content.catch(()=>{
       this.showError = true;
+      this.showSuccess = false;
     })
   }
 }
