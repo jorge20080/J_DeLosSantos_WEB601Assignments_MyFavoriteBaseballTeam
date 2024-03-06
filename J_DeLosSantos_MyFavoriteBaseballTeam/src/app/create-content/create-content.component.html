@@ -1,4 +1,5 @@
 <form (submit)="onSubmit($event, {id: id.valueAsNumber, title:title.value, description:description.value, creator:creator.value, imgURL:imgURL.value, type:type.value, tags:[tags.value]})">
+    <p *ngIf="invalidRequest" class="error">You must enter required fields</p>
     <label for="id">
         ID:
         <br>
