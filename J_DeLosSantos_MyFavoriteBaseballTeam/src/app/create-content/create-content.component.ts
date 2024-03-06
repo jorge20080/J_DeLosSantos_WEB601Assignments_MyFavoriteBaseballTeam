@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, NgModule, Output } from '@angular/core';
+import { Event } from '@angular/router';
 import { Content } from '../helper-files/content-interface';
 
 @Component({
