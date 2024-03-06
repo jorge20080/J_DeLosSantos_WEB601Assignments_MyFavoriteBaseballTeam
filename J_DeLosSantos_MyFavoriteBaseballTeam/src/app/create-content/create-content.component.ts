@@ -26,6 +26,7 @@ export class CreateContentComponent {
       }, 1000);
     })
     e.preventDefault();
+    (e.target as HTMLFormElement).reset();
     this.createContent.emit(sendContent);
   }
 }
