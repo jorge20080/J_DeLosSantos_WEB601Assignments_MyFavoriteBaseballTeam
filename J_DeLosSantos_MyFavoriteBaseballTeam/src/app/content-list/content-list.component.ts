@@ -22,7 +22,10 @@ export class ContentListComponent {
   constructor(private contentService: FavoriteBaseballTeamService){}
 
   ngOnInit() {
-    this.contentService.getContentList().subscribe(content=> this.contentItems = content);
+    this.contentService.getContentList().subscribe(content=> {
+      this.contentItems = content;
+    });
+    
   }
 
   checkIfTitleExists(){

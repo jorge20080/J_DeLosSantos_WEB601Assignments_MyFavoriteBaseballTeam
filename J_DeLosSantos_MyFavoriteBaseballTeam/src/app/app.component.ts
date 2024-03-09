@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { AppMessagesComponent } from './app-messages/app-messages.component';
 import { ContentCardComponent } from './content-card/content-card.component';
 import { ContentListComponent } from './content-list/content-list.component';
 import { Content } from './helper-files/content-interface';
@@ -8,7 +9,7 @@ import { FavoriteBaseballTeamService } from './services/favorite-baseball-team.s
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ContentListComponent,ContentCardComponent],
+  imports: [RouterOutlet, ContentListComponent,ContentCardComponent, AppMessagesComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
