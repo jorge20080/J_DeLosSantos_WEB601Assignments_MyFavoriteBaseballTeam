@@ -15,8 +15,12 @@ export class FavoriteBaseballTeamService {
     return items;
   }
   getContent(id:number): Observable<Content>{
+    // const item = of(contentItems.find(content=>content.id===id) || {} as Content);
     const item = of(contentItems[id]);
     this.messageService.add(`Content Item at id: ${id}`);
     return item;
+  }
+  getLength(){
+    return contentItems.length;
   }
 }

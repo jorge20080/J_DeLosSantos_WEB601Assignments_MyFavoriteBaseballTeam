@@ -32,6 +32,10 @@
   <div class="content">
     <div>
       <app-messages></app-messages>
+      <form (submit)= "getContent($event, search.value)" >
+        <input type="search" name="search" #search/>
+        <input type="submit" />
+      </form>
       <app-content-card [content]="content" [hasShadow]="true"></app-content-card>
       <app-content-list></app-content-list>
     </div>
