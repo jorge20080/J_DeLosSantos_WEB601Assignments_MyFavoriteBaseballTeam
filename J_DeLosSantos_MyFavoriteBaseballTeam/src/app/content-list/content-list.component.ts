@@ -19,10 +19,11 @@ export class ContentListComponent {
   searchValue: string =""; 
   showResult: boolean = false;
 
-  constructor(private contentService: FavoriteBaseballTeamService){
-    this.contentService.getContent().subscribe(content=> this.contentItems = content);
+  constructor(private contentService: FavoriteBaseballTeamService){}
+
+  ngOnInit() {
+    this.contentService.getContentList().subscribe(content=> this.contentItems = content);
   }
-  
 
   checkIfTitleExists(){
     return this.contentItems.some(content=>content.title===this.searchValue);

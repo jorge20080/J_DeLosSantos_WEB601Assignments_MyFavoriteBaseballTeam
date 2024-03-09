@@ -30,6 +30,9 @@
 
 <main class="main">
   <div class="content">
-    <app-content-list></app-content-list>
+    <div>
+      <app-content-card [content]="content" [hasShadow]="true"></app-content-card>
+      <app-content-list></app-content-list>
+    </div>
   </div>
 </main>

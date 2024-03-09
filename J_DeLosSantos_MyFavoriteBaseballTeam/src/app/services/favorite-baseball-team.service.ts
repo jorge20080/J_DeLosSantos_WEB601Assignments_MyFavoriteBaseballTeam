@@ -8,7 +8,10 @@ import { contentItems } from '../helper-files/contentDb';
 })
 export class FavoriteBaseballTeamService {
   constructor() { }
-  getContent(): Observable<Content[]>{
+  getContentList(): Observable<Content[]>{
     return of(contentItems);
+  }
+  getContent(id:number): Observable<Content>{
+    return of(contentItems[id]);
   }
 }

@@ -13,6 +13,7 @@ export class ContentCardComponent {
   @Input() content: Content = {id:0, title: "abc", description:"abc", creator:"abc"};
   @Input() isFirst:boolean = false;
   @Input() type:string ="";
+  @Input() hasShadow:boolean = false;
   constructor(){
 
   }
