@@ -38,4 +38,16 @@ export class ContentListComponent {
   handleOnClick(){
     this.showResult = true;
   }
+  addContentToList(newContentItem: Content): void {
+    this.contentService.addContent(newContentItem)
+      .subscribe(newContentFromServer =>
+        this.contentItems.push(newContentFromServer)
+      );
+  }
+  updateContentInList(contentItem: Content): void {
+    this.contentService.updateContent(contentItem)
+      .subscribe(() =>
+        console.log("Content updated successfully")
+      );
+    }
 }
